@@ -4,7 +4,7 @@ export interface ICharacterCore {
     status: string;
     species: string;
     gender: string;
-    avatar: string;
+    image: string;
 }
 
 export interface ICharacter extends ICharacterCore {
@@ -13,15 +13,19 @@ export interface ICharacter extends ICharacterCore {
     episodes: IEpisode[];
 }
 
+export interface Residents {
+    id: number;
+}
 export interface ILocation {
     id: number;
     name: string;
     type: string;
-    noOfResidents: number;
+    residents: [Residents];
     dimension: string;
 }
 
 export interface IEpisode {
+    [x: string]: any;
     id: number;
     name: string;
     airDate: string;

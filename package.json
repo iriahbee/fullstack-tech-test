@@ -10,9 +10,13 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.10",
+    "daisyui": "^4.6.0",
+    "graphql": "^16.8.1",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "vite": "^5.0.11"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.5",
